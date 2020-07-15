@@ -1,9 +1,442 @@
-h1 {
-    background:linear-gradient(to right,red,purple);
-    padding: 0;
-    margin: 0;
-    text-align: center;
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 780px;
+  background: url('../images/bg.jpg') no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #ffffff;
 }
-h2 {
-    color: blue;
+.logo {
+  position: absolute;
+  height: 117px;
+  background: url('../images/logo.png') no-repeat;
+  background-size: contain;
+  width: 100%;
+  left: 0;
+}
+div.panel {
+  position: relative;
+  border-image-source: url('../images/border.png');
+  border-image-slice: 51 40 21 130 ;
+  border-image-repeat: round;
+  border-width: 51px 40px 21px 130px ;
+  border-style: solid;
+}
+.inner {
+  position: absolute;
+  top: -51px;
+  right: -40px;
+  bottom: -21px;
+  left: -130px;
+}
+.left {
+  float: left;
+  width: 30%;
+  margin-top: 87px;
+}
+.left .overview {
+  height: 105px;
+  margin-bottom: 20px;
+}
+.left .overview .itembox {
+  height: 105px;
+}
+.left .overview .itembox .item {
+  float: left;
+  width: 25%;
+  height: 105px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+.left .overview .itembox .item .count {
+  font-size: 18px;
+}
+.left .overview .itembox .item .description {
+  font-size: 14px;
+  color: #4c88bf;
+}
+.left .overview .itembox .item .description::before {
+  content: '\e900';
+  font-family: 'icomoon';
+}
+.left .overview .itembox .item .description.dot2::before {
+  color: #6acca3;
+}
+.left .overview .itembox .item .description.dot3::before {
+  color: #6acca3;
+}
+.left .overview .itembox .item .description.dot4::before {
+  color: #ed2e1d;
+}
+.left .monitor {
+  height: 470px;
+  margin-bottom: 20px;
+}
+.left .monitor .tab {
+  height: 470px;
+  font-size: 18px;
+  padding: 20px 20px 0;
+}
+.left .monitor .tab li {
+  float: left;
+}
+.left .monitor .tab li h4 {
+  color: #093fc4;
+}
+.left .monitor .tab li h4.active {
+  color: #fff;
+}
+.left .monitor .tab li:nth-child(1) h4 {
+  padding-right: 30px;
+  border-right: 5px solid #00f2f1;
+}
+.left .monitor .tab li:nth-child(2) h4 {
+  padding-left: 30px;
+}
+.left .monitor .carousel {
+  position: relative;
+  height: 426px;
+}
+.left .monitor .carousel .titles {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #5bd8dc;
+}
+.left .monitor .carousel .titles:hover {
+  background-color: #1a1c27;
+  cursor: pointer;
+}
+.left .monitor .carousel .titles span {
+  float: left;
+  width: 25%;
+}
+.left .monitor .carousel .titles .titleAddress {
+  width: 50%;
+}
+.left .monitor .carousel .hidebox {
+  position: relative;
+  height: 396px;
+  overflow: hidden;
+}
+.left .monitor .carousel .rowbox {
+  position: absolute;
+  left: 0;
+  height: 396px;
+  width: 352px;
+}
+.left .monitor .carousel .row {
+  position: relative;
+  color: #3f6eab;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+}
+.left .monitor .carousel .row:hover {
+  background-color: #1a1c27;
+  cursor: pointer;
+}
+.left .monitor .carousel .row:hover::before {
+  position: absolute;
+  left: 0;
+  content: '\e900';
+  font-family: 'icomoon';
+  font-size: 16px;
+}
+.left .monitor .carousel .row span {
+  float: left;
+  width: 25%;
+  padding-right: 10px;
+}
+.left .monitor .carousel .row .address {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.left .point {
+  height: 335px;
+  margin-bottom: 20px;
+}
+.left .point .map {
+  padding: 20px;
+}
+.left .point .map h3 {
+  font-size: 20px;
+}
+.left .point .map .pie,
+.left .point .map .data {
+  float: left;
+  height: 240px;
+  margin-top: 15px;
+}
+.left .point .map .pie {
+  width: 60%;
+}
+.left .point .map .data {
+  width: 40%;
+  background: url('../images/rect.png') no-repeat;
+  background-size: cover;
+  padding-left: 30px;
+}
+.left .point .map .data .item {
+  margin-top: 40px;
+}
+.left .point .map .data .count {
+  font-size: 22px;
+}
+.left .point .map .data span {
+  font-size: 16px;
+  color: #3774c6;
+}
+.right {
+  float: left;
+  width: 30%;
+  height: 680px;
+  margin-top: 87px;
+}
+.right .order {
+  height: 145px;
+}
+.right .order .inner {
+  padding: 20px;
+}
+.right .order .inner .fillter a {
+  color: #1950c4;
+  font-size: 18px;
+  padding: 0 18px;
+  border-right: 2px solid #00f2f1;
+}
+.right .order .inner .fillter a.active {
+  color: #ffffff;
+}
+.right .order .inner .fillter a:last-child {
+  border: none;
+}
+.right .order .inner .data {
+  margin-top: 20px;
+}
+.right .order .inner .data .item {
+  float: left;
+  width: 50%;
+}
+.right .order .inner .data .item .count {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.right .order .inner .data .item span {
+  font-size: 16px;
+}
+.right .sale {
+  height: 245px;
+  margin-top: 20px;
+}
+.right .sale .inner {
+  padding: 20px;
+}
+.right .sale .inner .tab h2 {
+  float: left;
+  padding-right: 20px;
+  border-right: 2px solid skyblue;
+}
+.right .sale .inner .tab .period {
+  float: left;
+}
+.right .sale .inner .tab .period a {
+  display: inline-block;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 16px;
+  margin: 0 10px;
+  color: #098dc0;
+}
+.right .sale .inner .tab .period a.active {
+  background-color: #4c9bfd;
+  color: #ffff;
+}
+.right .sale .inner .chart {
+  margin-top: 15px;
+  height: 155px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.right .wrap {
+  height: 230px;
+  margin-top: 20px;
+}
+.right .wrap .qudao {
+  float: left;
+  width: 48%;
+  height: 100%;
+}
+.right .wrap .qudao .inner {
+  padding: 20px;
+}
+.right .wrap .qudao .inner .data {
+  margin-top: 15px;
+}
+.right .wrap .qudao .inner .data .item {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+}
+.right .wrap .qudao .inner .data .item .count {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.right .wrap .qudao .inner .data .item .jiaotong {
+  font-size: 14px;
+  color: #4287de;
+}
+.right .wrap .qudao .inner .data .item:nth-child(even) {
+  padding-left: 15px;
+}
+.right .wrap .quarter {
+  float: left;
+  margin-left: 4%;
+  width: 48%;
+  height: 100%;
+}
+.right .wrap .quarter .inner {
+  padding: 20px;
+}
+.right .wrap .quarter .inner .chart {
+  position: relative;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.right .wrap .quarter .inner .chart .gauge {
+  height: 100%;
+}
+.right .wrap .quarter .inner .chart .label {
+  position: absolute;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.right .wrap .quarter .inner .data {
+  margin-top: 20px;
+}
+.right .wrap .quarter .inner .data .item {
+  float: left;
+  width: 50%;
+}
+.right .wrap .quarter .inner .data .item span {
+  font-size: 10px;
+}
+.right .hot {
+  margin-top: 10px;
+  height: 280px;
+}
+.right .hot .inner {
+  padding: 20px;
+}
+.right .hot .inner .all {
+  float: left;
+  margin-right: 20px;
+}
+.right .hot .inner .all li {
+  height: 65px;
+  line-height: 65px;
+  color: #3e7fd2;
+  font-size: 14px;
+}
+.right .hot .inner .all li span {
+  padding-right: 10px;
+  font-size: 28px;
+  vertical-align: middle;
+}
+.right .hot .inner .province {
+  float: left;
+}
+.right .hot .inner .province h2 {
+  margin-bottom: 15px;
+}
+.right .hot .inner .province .rank {
+  float: left;
+  font-size: 12px;
+}
+.right .hot .inner .province .rank li {
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+}
+.right .hot .inner .province .rank li span {
+  width: 50%;
+}
+.right .hot .inner .province .rank li span .icon-up {
+  color: #dc3c33;
+}
+.right .hot .inner .province .rank li span .icon-down {
+  color: #1e6d5b;
+}
+.right .hot .inner .province .rank li span:nth-of-type(2) {
+  padding-left: 15px;
+}
+.right .hot .inner .province .rank:nth-of-type(1) li span:nth-of-type(1) {
+  color: #4995f4;
+}
+.right .hot .inner .province .rank:nth-of-type(2) li span:nth-of-type(1) {
+  color: #48e2e7;
+}
+.center {
+  float: left;
+  width: 40%;
+  height: 680px;
+  margin-top: 117px;
+}
+.center .map {
+  height: 565px;
+  margin: 0 20px;
+}
+.center .map .chart {
+  height: 541px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.center .map .chart .geo {
+  height: 100%;
+}
+.center .user {
+  height: 338px;
+  margin: 20px 20px 0;
+}
+.center .user h2 {
+  height: 20%;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.center .user .chart {
+  height: 80%;
+  padding: 0 20px ;
+}
+.center .user .chart .bar {
+  float: left;
+  width: 70%;
+  height: 240px;
+}
+.center .user .chart .data {
+  float: left;
+  width: 30%;
+  background: url('../images/rect.png') no-repeat;
+  height: 240px;
+}
+.center .user .chart .data .item {
+  margin-top: 40px;
+  text-align: center;
+}
+.center .user .chart .data .item .count {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.center .user .chart .data .item span {
+  font-size: 14px;
+  color: #4288e2;
 }

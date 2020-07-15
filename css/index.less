@@ -1,0 +1,500 @@
+ 
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 780px;
+    background:url('../images/bg.jpg') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 20px;
+    color:#ffffff ;
+}
+.logo {
+   position: absolute;
+   height: 117px; 
+   background: url('../images/logo.png') no-repeat;
+   background-size: contain; 
+   width: 100%;
+   left: 0;
+}
+//  边框背景图样式
+div.panel {
+    position: relative;
+    border-image-source: url('../images/border.png');
+    border-image-slice:51 40 21 130 ;
+    border-image-repeat: round;
+    border-width:51px 40px 21px 130px ;
+    border-style: solid;
+ }
+ .inner {
+     position: absolute;
+     top: -51px;
+     right: -40px;
+     bottom: -21px;
+     left: -130px;
+ }
+.left  {
+    float: left;
+    width: 30%;
+    margin-top: 87px;
+    .overview {
+        height: 105px;
+        margin-bottom: 20px;
+        .itembox{ 
+            height: 105px;
+      .item {
+          float: left;
+          width: 25%;
+          height: 105px;
+          text-align: left;
+          padding-top: 25px;
+          padding-left: 15px;
+          .count{
+           
+              font-size: 18px;
+          }
+          .description {
+              font-size: 14px;
+              color: #4c88bf;
+            //   css生成伪元素
+             &::before{
+               content: '\e900';
+               font-family: 'icomoon';
+             }
+           &.dot2::before{
+               color: #6acca3;
+           }
+           &.dot3::before{
+            color: #6acca3;
+        } 
+        &.dot4::before{
+            color: #ed2e1d;
+        }
+      
+            }
+         
+      }
+     }
+    }
+    .monitor {
+        height: 470px; 
+        margin-bottom: 20px;
+      .tab {
+        height: 470px; 
+        font-size: 18px;
+        padding: 20px 20px 0;
+       
+       li {
+         float: left;  
+         h4 {
+            color: #093fc4;
+         }
+         h4.active {
+             color:#fff;
+         }
+      
+       &:nth-child(1) h4 {
+           padding-right: 30px;
+           border-right: 5px solid #00f2f1;
+       }
+       &:nth-child(2) h4 {
+        padding-left: 30px;
+       
+    }
+        }
+     }
+   
+     .carousel{
+         position: relative;
+        height: 426px;
+      .titles {
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #5bd8dc;
+          &:hover {
+          
+              background-color: #1a1c27;
+              cursor: pointer;
+          }
+         
+          span {
+              float: left;
+              width: 25%
+          }
+       
+          .titleAddress {
+             width: 50%;
+         
+        }
+       
+       
+      }
+      .hidebox {
+          position: relative;
+          height: 396px;
+          overflow: hidden;
+          
+      }
+      .rowbox {
+          position: absolute;
+          left: 0;
+          height: 396px;
+          width: 352px;
+       
+      }
+      .row {
+         position: relative;
+        color: #3f6eab;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 15px;
+        //伪类选择器，鼠标经过时修改样式
+        &:hover {
+            background-color: #1a1c27;
+            cursor: pointer;
+        }
+        //鼠标经过时生成伪元素
+        &:hover::before {
+            position: absolute;
+            left: 0;
+            content: '\e900';
+            font-family: 'icomoon';
+            font-size: 16px;
+        }
+         span {
+             float: left;
+             width: 25%;
+             padding-right: 10px;
+         }
+    
+        .address {
+            width: 50%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;     
+            
+        }
+    }
+    }
+  
+ 
+    }
+    .point {
+        height: 335px;
+        margin-bottom: 20px;
+      .map {
+          padding: 20px;
+          h3 {
+              font-size: 20px;
+          }
+          .pie ,.data {
+              float: left;
+              height: 240px;
+              margin-top: 15px;
+            
+          }
+         .pie {
+             width: 60%;
+           
+         }
+         .data {
+             width: 40%;
+             background: url('../images/rect.png') no-repeat;
+             background-size: cover;
+             padding-left: 30px;
+             .item {
+                 margin-top: 40px;
+             }
+             .count {
+                 font-size: 22px;
+             }
+             span {
+                 font-size: 16px;
+                 color: #3774c6;
+             }
+         }
+     
+      }
+    }
+ 
+}
+.right {
+    float: left;
+    width: 30%;
+    height: 680px;
+    margin-top: 87px;
+    // 订单开始
+    .order {
+        height: 145px;
+         
+       
+         .inner {
+            padding: 20px;
+        .fillter {
+            a {
+                color: #1950c4;
+                font-size: 18px;
+                padding: 0 18px;
+                border-right: 2px solid #00f2f1;
+                //必须加上当前级选中
+                &.active {
+                    color: #ffffff;
+                }
+                &:last-child{
+                    border: none;
+                }
+            }
+         
+        }
+        .data {
+            margin-top: 20px;
+            .item {
+                float: left;
+                width: 50%;
+                .count{
+                    font-size: 22px;
+                    margin-bottom: 10px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    
+    
+  
+       }
+    }
+    }
+    // 订单结束
+    // 销售开始
+    .sale {
+        height: 245px;
+        margin-top: 20px;
+        .inner {
+            padding: 20px;
+            .tab {
+                h2 {
+                    float: left;
+                    padding-right: 20px;
+                    border-right: 2px solid skyblue;
+                }
+                .period {
+                    float: left;
+                    a {
+                        display: inline-block;
+                        text-align: center;
+                        width: 23px;
+                        height: 23px;
+                        line-height: 23px;
+                        font-size: 16px;
+                        margin: 0 10px;
+                        color:#098dc0;
+                     &.active {
+                         background-color: #4c9bfd;
+                         color: #ffff;
+                     }
+
+                    }
+                }
+            }
+            .chart {
+                margin-top: 15px;
+                height: 155px;
+                background-color: rgba(255,255,255,.1);
+            }
+        }
+    }
+    // 销售结束
+    // 渠道与季度销售开始
+    .wrap {
+        height: 230px;
+        margin-top: 20px;
+        .qudao {
+            float: left;
+            width: 48%;
+           height: 100%;
+           .inner {
+               padding: 20px;
+               .data {
+                   margin-top: 15px;
+                   .item {
+                       float: left;
+                       width: 50%;
+                       margin-top: 10px;
+                       .count {
+                           font-size: 22px;
+                           margin-bottom: 10px;
+                       }
+                       .jiaotong {
+                           font-size: 14px;
+                           color: #4287de;
+                       }
+                    &:nth-child(even) {
+                        padding-left: 15px;
+                    }
+                   }
+               }
+           }
+        }
+        .quarter {
+            float: left;
+            margin-left: 4%;
+            width: 48%;
+            height: 100%;
+            .inner {
+                padding: 20px;
+               
+                .chart {
+                    position: relative;
+                    height: 75px;
+                    background-color: rgba(255,255,255,.1);
+                    .gauge{
+                        height: 100%;
+                    }
+                    .label {
+                     position: absolute;
+                     font-size: 22px;
+                     top:50%;
+                     left: 50%;
+                    transform: translate(-50%,-50%);
+                     margin: auto;
+                    }
+                }
+                .data {
+                    margin-top: 20px;
+                    .item {
+                        float: left;
+                        width: 50%;
+                        span {
+                            font-size: 10px;
+                        };
+                    }
+                }
+            }
+
+        }
+    }
+    // 渠道与季度销售结束
+    .hot {
+        margin-top: 10px;
+        height: 280px;
+  
+        .inner {
+            padding: 20px;
+          .all{
+              float: left;
+              margin-right: 20px;
+              li{
+                  height: 65px;
+                  line-height: 65px;
+                  color: #3e7fd2;
+                  font-size: 14px;
+                  span {
+                      padding-right: 10px;
+                      font-size: 28px;
+                      vertical-align: middle;
+                  }
+              }
+          }
+          .province {
+             h2 {
+                 margin-bottom: 15px;
+             }
+              float: left;
+              .rank {
+                  float: left;
+                  font-size: 12px;
+                  li {
+                    width: 120px;
+                    height: 32px;
+                    line-height: 32px;
+                     span {
+                         width: 50%;
+                         .icon-up {
+                             color: #dc3c33;
+                         }
+                         .icon-down {
+                             color: #1e6d5b;
+                         }
+                      &:nth-of-type(2){
+                          padding-left:15px;
+                      }
+                     }  
+                  }
+                  &:nth-of-type(1) li span:nth-of-type(1){
+                      color: #4995f4;
+                  }
+                  &:nth-of-type(2) li span:nth-of-type(1){
+                      color: #48e2e7;
+                  }
+              }
+          }
+        }
+    }
+}
+
+// 中间列样式
+ .center {
+     float: left;
+     width: 40%;
+     height: 680px;
+     
+     margin-top: 117px;
+     .map {
+         height: 565px;
+         margin: 0 20px;    
+        //  background-size: contain;
+        .chart {
+            height: 541px;
+            background-color: rgba(255,255,255,.1);
+            .geo {
+                height: 100%;
+            }
+        }
+     }
+     .user {
+         height: 338px;
+         margin: 20px 20px 0;
+        
+         h2 {
+          height: 20%;
+          padding-left: 20px;
+          padding-top: 20px;
+         }
+         .chart {
+             height: 80%;
+             padding:0 20px ; 
+             .bar {
+                 float: left;
+                 width: 70%;
+                 height: 240px;
+                
+             }
+             .data {
+                 float: left;
+                 width: 30%;
+                 background: url('../images/rect.png') no-repeat;
+                 height: 240px;
+                 .item {
+               
+                     margin-top: 40px;
+                     text-align: center;
+                     .count {
+                         font-size: 22px;
+                         margin-bottom: 10px;
+                     }
+                     span {
+                       
+                         font-size: 14px;
+                         color: #4288e2;
+                     }
+                 }
+             }
+         }
+
+     }
+ }
+// 中间列样式结束
